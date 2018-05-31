@@ -38,6 +38,7 @@
 		F99AA00E20C04E5A00D7C3EF /* ClassKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99AA01220C04E5A00D7C3EF /* ClassKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassKitDemoTests.swift; sourceTree = "<group>"; };
 		F99AA01420C04E5A00D7C3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FB2C5020C0B2670023AF12 /* ClassKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClassKitDemo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		F99A9FF920C04E4C00D7C3EF /* ClassKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F9FB2C5020C0B2670023AF12 /* ClassKitDemo.entitlements */,
 				F99A9FFA20C04E4C00D7C3EF /* AppDelegate.swift */,
 				F99A9FFC20C04E4C00D7C3EF /* ViewController.swift */,
 				F99A9FFE20C04E4C00D7C3EF /* Main.storyboard */,
@@ -149,6 +151,11 @@
 				TargetAttributes = {
 					F99A9FF620C04E4C00D7C3EF = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.ClassKit = {
+								enabled = 1;
+							};
+						};
 					};
 					F99AA00D20C04E5A00D7C3EF = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -362,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClassKitDemo/ClassKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AC44Z6PNA;
 				INFOPLIST_FILE = ClassKitDemo/Info.plist;
@@ -380,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClassKitDemo/ClassKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6AC44Z6PNA;
 				INFOPLIST_FILE = ClassKitDemo/Info.plist;
